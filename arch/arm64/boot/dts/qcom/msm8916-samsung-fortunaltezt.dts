@@ -22,8 +22,16 @@
 	chassis-type = "handset";
 };
 
+&i2c_nfc {
+	status = "okay";
+};
+
 &mpss_mem {
 	reg = <0x0 0x86800000 0x0 0x5000000>;
+};
+
+&pn547_nfc {
+	status = "okay";
 };
 
 &st_accel {
