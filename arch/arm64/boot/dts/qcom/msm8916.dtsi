@@ -246,8 +246,37 @@
 		compatible = "operating-points-v2-kryo-cpu";
 		opp-shared;
 
-		opp-3000000000 {
-			opp-hz = /bits/ 64 <3000000000>;
+		opp-200000000 {
+			opp-hz = /bits/ 64 <200000000>;
+			required-opps = <&rpmpd_opp_svs_soc>, <&cpr_opp1>;
+		};
+		opp-400000000 {
+			opp-hz = /bits/ 64 <400000000>;
+			required-opps = <&rpmpd_opp_svs_soc>, <&cpr_opp2>;
+		};
+		opp-533333000 {
+			opp-hz = /bits/ 64 <533333000>;
+			required-opps = <&rpmpd_opp_nom>, <&cpr_opp3>;
+		};
+		opp-800000000 {
+			opp-hz = /bits/ 64 <800000000>;
+			required-opps = <&rpmpd_opp_nom>, <&cpr_opp4>;
+		};
+		opp-998400000 {
+			opp-hz = /bits/ 64 <998400000>;
+			required-opps = <&rpmpd_opp_super_turbo>, <&cpr_opp5>;
+		};
+		opp-1094400000 {
+			opp-hz = /bits/ 64 <1094400000>;
+			required-opps = <&rpmpd_opp_super_turbo>, <&cpr_opp6>;
+		};
+		opp-1152000000 {
+			opp-hz = /bits/ 64 <1152000000>;
+			required-opps = <&rpmpd_opp_super_turbo>, <&cpr_opp7>;
+		};
+		opp-1209600000 {
+			opp-hz = /bits/ 64 <1209600000>;
+			required-opps = <&rpmpd_opp_super_turbo>, <&cpr_opp8>;
 		};
 	};
 
@@ -1858,8 +1887,11 @@
 			gpu_opp_table: opp-table {
 				compatible = "operating-points-v2";
 
-				opp-3000000000 {
-					opp-hz = /bits/ 64 <3000000000>;
+				opp-400000000 {
+					opp-hz = /bits/ 64 <400000000>;
+				};
+				opp-19200000 {
+					opp-hz = /bits/ 64 <19200000>;
 				};
 			};
 		};
