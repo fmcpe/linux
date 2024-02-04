@@ -274,8 +274,8 @@
 			opp-hz = /bits/ 64 <1152000000>;
 			required-opps = <&rpmpd_opp_super_turbo>, <&cpr_opp7>;
 		};
-		opp-1209600000 {
-			opp-hz = /bits/ 64 <1209600000>;
+		opp-2188800000 {
+			opp-hz = /bits/ 64 <2188800000>;
 			required-opps = <&rpmpd_opp_super_turbo>, <&cpr_opp8>;
 		};
 	};
