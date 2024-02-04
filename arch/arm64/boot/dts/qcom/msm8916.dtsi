@@ -1887,11 +1887,8 @@
 			gpu_opp_table: opp-table {
 				compatible = "operating-points-v2";
 
-				opp-400000000 {
-					opp-hz = /bits/ 64 <400000000>;
-				};
-				opp-19200000 {
-					opp-hz = /bits/ 64 <19200000>;
+				opp-950000000 {
+					opp-hz = /bits/ 64 <950000000>;
 				};
 			};
 		};
